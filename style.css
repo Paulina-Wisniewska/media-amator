@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -89,6 +90,7 @@ header {
     justify-content: center;
 }
 
+
 .categories-items button{
     font-size: 20px;
     padding: 10px 25px;
@@ -96,7 +98,6 @@ header {
     border: none;
     cursor: pointer;
     border-radius: 15px;
-    transition: all 0.3s ease-in-out;
 }
 
 .categories-items button:hover{
@@ -128,7 +129,6 @@ header {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 20px;
-    transition: all 0.3 ease-in-out;
 }
 
 .product-item:hover {
@@ -184,4 +184,46 @@ header {
 
 .product-item.on-sale .price-sale{
     display: block;
+}
+
+.product-add-to-basket-btn {
+    background: black;
+    color: white;
+    width: 60%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+.product-add-to-basket-btn:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1300px) {
+    .container {
+        display: flex;
+    }
+    .categories-items {
+        flex-direction: column;
+    }
+    .categories {
+        margin: 0px;
+        border-right: 1px solid rgb(129, 129, 129);
+        min-width: 350px;
+    }
+    .categories-items button {
+        padding: 10px 50px;
+        border-radius: 5px;
+    }
+    .categories-title {
+        background: yellow;
+        width: 100%;
+        text-align: center;
+        padding: 7px;
+    }
+    .products {
+        margin-left: 15px;
+    }
 }
